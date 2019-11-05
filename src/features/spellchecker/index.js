@@ -20,7 +20,7 @@ export default function init(stores) {
       debug('Override settings.spellcheckerEnabled flag to false');
 
       Object.assign(stores.settings.app, {
-        enableSpellchecking: false,
+        enableSpellchecking: true,
       });
     }
   });
