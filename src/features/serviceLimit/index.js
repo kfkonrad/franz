@@ -3,7 +3,8 @@ import { ServiceLimitStore } from './store';
 
 const debug = require('debug')('Franz:feature:serviceLimit');
 
-export const DEFAULT_SERVICE_LIMIT = 3;
+// setting this to 0 disables this 'feature'
+export const DEFAULT_SERVICE_LIMIT = 0;
 
 let store = null;
 

@@ -28,9 +28,7 @@ export class ServiceLimitStore extends FeatureStore {
   }
 
   @computed get serviceLimit() {
-    if (!this.isServiceLimitEnabled || this.stores.features.features.serviceLimitCount === 0) return 0;
-
-    return this.stores.features.features.serviceLimitCount || DEFAULT_SERVICE_LIMIT;
+    return DEFAULT_SERVICE_LIMIT;
   }
 
   @computed get serviceCount() {
