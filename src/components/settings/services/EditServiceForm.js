@@ -284,7 +284,7 @@ export default @observer class EditServiceForm extends Component {
                 )}
                 {recipe.hasCustomUrl && (
                   <TabItem title={intl.formatMessage(messages.tabOnPremise)}>
-                    {user.isPremium || recipe.author.find(a => a.email === user.email) ? (
+                    {user.isPremium || true || recipe.author.find(a => a.email === user.email) ? (
                       <Fragment>
                         <Input field={form.$('customUrl')} />
                         {form.error === 'url-validation-error' && (

@@ -132,7 +132,7 @@ export default @observer class ServiceView extends Component {
           </Fragment>
         ) : (
           <>
-            {service.isServiceAccessRestricted ? (
+            {(service.isServiceAccessRestricted && false) ? (
               <ServiceRestricted
                 name={service.recipe.name}
                 upgrade={upgrade}
