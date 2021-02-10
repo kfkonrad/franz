@@ -28,6 +28,12 @@ $ npm run rebuild
 ```
 
 ### Install dependencies
+To install build dependencies run the following commands (only needed once and on Windows only):
+```bash
+$ npm install --global --production windows-build-tools@4.0.0
+$ npm config set msvs_version 2015 --global
+```
+
 Run the following command to install all dependencies, and link sibling modules with Franz.
 ```bash
 $ npx lerna bootstrap
